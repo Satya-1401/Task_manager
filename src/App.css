@@ -48,6 +48,15 @@ h1 {
   color: var(--placeholder-text);
 }
 
+.TextInput-Button{
+  display:flex;
+}
+
+.todo-btn-div{
+  margin-top: 1rem;
+}
+
+
 .todo-input::placeholder,
 .todo-text {
   color: #ffffff;
