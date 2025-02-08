@@ -1,0 +1,28 @@
+.TodoWrapper {
+  margin: 2rem 6rem;
+  background: var(--body_color);
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: var(--box_shadow_color);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 6px;
+}
+
+.todo-header-text {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.todo-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 1rem 6rem;
+}

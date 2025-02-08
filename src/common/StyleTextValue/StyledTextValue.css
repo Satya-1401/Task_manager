@@ -1,0 +1,19 @@
+.todo-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.todo-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 700;
+  width: 24px;
+  height: 24px;
+  background-color: var(--values_color);
+  color: var(--values-text-color);
+  border-radius: 100%;
+  margin-left: 3px;
+}
