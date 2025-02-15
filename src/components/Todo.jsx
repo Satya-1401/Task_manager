@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Todo.css";
-import { ReactSVG } from "react-svg";
+// import { ReactSVG } from "react-svg";
 import Eye from "../assets/eye.svg";
 import EyeSlash from "../assets/eye-slash.svg";
 import EditIcon from "../assets/editIcon.svg";
@@ -29,30 +29,34 @@ const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
       <div className="icons">
         {showData
           ? task.task.length > 10 && (
-              <ReactSVG
+              <img
                 src={EyeSlash}
                 className="HideShowIcons"
                 onClick={() => toggleShowData()}
+                data-testid="eye-slash-icon"
               />
             )
           : task.task.length > 10 && (
-              <ReactSVG
+              <img
                 src={Eye}
                 className="HideShowIcons"
                 onClick={() => toggleShowData()}
+                data-testid="eye-icon"
               />
             )}
 
-        <ReactSVG
+        <img
           src={EditIcon}
           className="HideShowIcons"
           onClick={() => editTodo(task.id)}
+          data-testid="edit-icon"
         />
 
-        <ReactSVG
+        <img
           src={TrashIcon}
           className="HideShowIcons"
           onClick={() => deleteTodo(task.id)}
+          data-testid="trash-icon"
         />
       </div>
     </div>
